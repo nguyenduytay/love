@@ -2,59 +2,73 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiệp Chúc 20/10</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiệp Chúc 20/10</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
-    <!-- Hiệu ứng nền -->
-    <div class="background" id="background"></div>
+  <!-- Hiệu ứng nền -->
+  <div class="background" id="background"></div>
+  <!-- Chỗ dành cho Lottie player mới -->
+  <div class="lottie-container" id="mainLottie">
+    <!-- Lottie player sẽ được thêm vào đây -->
+     <lottie-player src="./json/Love dog.json" background="transparent" speed="1" style="width: 600px; height: 300px"
+      loop autoplay>
+    </lottie-player>
+  </div>
+  <!-- Phong bì thư -->
+  <div class="envelope" id="envelope">
+    <div class="envelope-body">
+      <div class="envelope-flap">
+        <p>Nhấn để mở thiệp</p>
+      </div>
+      <div class="envelope-content">
+        <p class="envelope-content-body">
+          Chúc mừng ngày Phụ nữ Việt Nam 20/10
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Phong bì thư -->
-    <div class="envelope" id="envelope">
-        <div class="envelope-body">
-            <div class="envelope-flap">
-                <p>Nhấn để mở thiệp</p>
-            </div>
-            <div class="envelope-content">
-                <p class="envelope-content-body">Chúc mừng ngày Phụ nữ Việt Nam 20/10</p>
-            </div>
-        </div>
+  <!-- Hiệu ứng trái tim -->
+  <div class="hearts" id="hearts"></div>
+
+  <!-- Thiệp chúc -->
+  <div class="card" id="card">
+    <button class="close-btn" id="closeBtn">×</button>
+    <div class="card-header">
+      <h1>Chúc Mừng 20/10</h1>
+    </div>
+    <div class="card-content">
+      <p>Gửi đến người con gái tuyệt vời,</p>
+      <p>
+        Nhân ngày Phụ nữ Việt Nam 20/10, xin gửi đến bạn những lời chúc tốt
+        đẹp nhất. Chúc bạn luôn xinh đẹp, rạng rỡ, thành công trong công việc
+        và hạnh phúc trong cuộc sống.
+      </p>
+      <p>
+        Bạn xứng đáng nhận được tất cả những điều tuyệt vời nhất trên đời. Hãy
+        luôn yêu thương và trân trọng bản thân mình!
+      </p>
+    </div>
+    <div class="card-footer">
+      <p>Thân ái!</p>
     </div>
 
-    <!-- Hiệu ứng trái tim -->
-    <div class="hearts" id="hearts"></div>
-
-    <!-- Thiệp chúc -->
-    <div class="card" id="card">
-        <button class="close-btn" id="closeBtn">×</button>
-        <div class="card-header">
-            <h1>Chúc Mừng 20/10</h1>
-        </div>
-        <div class="card-content">
-            <p>Gửi đến người con gái tuyệt vời,</p>
-            <p>Nhân ngày Phụ nữ Việt Nam 20/10, xin gửi đến bạn những lời chúc tốt đẹp nhất. Chúc bạn luôn xinh đẹp,
-                rạng rỡ, thành công trong công việc và hạnh phúc trong cuộc sống.</p>
-            <p>Bạn xứng đáng nhận được tất cả những điều tuyệt vời nhất trên đời. Hãy luôn yêu thương và trân trọng bản
-                thân mình!</p>
-        </div>
-        <div class="card-footer">
-            <p>Thân ái!</p>
-        </div>
-
-        <!-- Nút phát nhạc -->
-        <div class="music-player">
-            <button id="playMusic" class="play-btn">🎵 Phát nhạc</button>
-            <audio id="bgMusic" src="music/nhumotvitinhtu.mp3"></audio>
-        </div>
+    <!-- Nút phát nhạc -->
+    <div class="music-player">
+      <button id="playMusic" class="play-btn">🎵 Phát nhạc</button>
+      <audio id="bgMusic" src="music/nhumotvitinhtu.mp3"></audio>
     </div>
+  </div>
 
-    <!-- Overlay -->
-    <div class="overlay" id="overlay"></div>
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #fce4ec, #f8bbd9);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -21,34 +22,10 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    
 }
 
-.flower {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: radial-gradient(circle, #ff4081, #e91e63);
-    border-radius: 50% 50% 0 50%;
-    transform: rotate(45deg);
-    opacity: 0.7;
-    animation: float 15s infinite linear;
-}
-
-.flower:nth-child(2n) {
-    background: radial-gradient(circle, #e91e63, #c2185b);
-    width: 20px;
-    height: 20px;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(100vh) rotate(45deg);
-    }
-
-    100% {
-        transform: translateY(-100px) rotate(405deg);
-    }
-}
+/* Bỏ hiệu ứng hoa rơi để thêm Lottie player */
 
 /* Phong bì */
 .envelope {
@@ -380,4 +357,16 @@ body {
     100% {
         box-shadow: 0 0 0 0 rgba(233, 30, 99, 0);
     }
+}
+.lottie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    min-height: 200px;
+}
+
+.lottie-container lottie-player {
+    max-width: 100%;
+    height: auto;
 }

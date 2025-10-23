@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tháng 10 Ý Nghĩa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="title">Tháng Mười Yêu Thương</h1>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h2 class="hero-title">Bạn sẽ vượt qua!</h2>
+            <p class="hero-text">
+              Tháng 10 mang đến những thay đổi và thử thách mới. Hãy nhớ rằng
+              bạn không đơn độc trên hành trình này. Mình sẽ đồng hành cùng bạn
+              trên chặng đường dài sắp tới.
+            </p>
+            <button class="cta-button" id="surpriseBtn">
+              Khám phá điều bất ngờ
+            </button>
+          </div>
+          <div class="lottie-container">
+            <lottie-player
+              src="./json/Cat feeling love emotionsexpression. Emojisticker animation.json"
+              background="transparent"
+              speed="1"
+              style="width: 500px; height: 250px"
+              loop
+              autoplay
+            >
+            </lottie-player>
+          </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+          <div class="message-box">
+            <h3 class="message-title">Gửi đến Bạn!</h3>
+            <p class="message-content">
+              Dù tháng 10 có mang đến những ngày mưa gió, hãy nhớ rằng sau cơn
+              mưa trời lại sáng. Mọi khó khăn rồi sẽ qua, và bạn sẽ trở nên mạnh
+              mẽ hơn bao giờ hết. Hãy tin vào chính mình!
+            </p>
+            <div class="quote">
+              "Mỗi ngày mới là một trang sách mới, hãy viết nên câu chuyện tuyệt
+              vời nhất"
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Tháng 10 này, hãy yêu thương bản thân nhiều hơn một chút ❤️</p>
+        <div class="footer-decoration">
+          <div class="leaf"></div>
+          <div class="leaf"></div>
+          <div class="leaf"></div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Confetti Effect -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Modal Quẻ Bói -->
+    <div id="fortuneModal" class="fortune-modal">
+      <div class="fortune-modal-content">
+        <div class="fortune-header">
+          <h2>🔮 Quẻ Bói Tháng 10</h2>
+          <button class="close-fortune" id="closeFortune">&times;</button>
+        </div>
+        <div class="fortune-body">
+          <div class="fortune-animation">
+            <div class="crystal-ball">
+              <div class="crystal-glow"></div>
+              <div class="crystal-shine"></div>
+            </div>
+          </div>
+          <div class="fortune-result" id="fortuneResult">
+            <h3>Đang rút quẻ...</h3>
+            <p>Hãy tập trung và nghĩ về điều bạn muốn biết...</p>
+          </div>
+          <div class="fortune-actions">
+            <button class="fortune-btn" id="drawFortune">Rút Quẻ</button>
+            <button class="fortune-btn secondary" id="closeFortuneBtn">
+              Đóng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
