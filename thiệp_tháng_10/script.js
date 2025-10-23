@@ -245,100 +245,107 @@ window.addEventListener("resize", function () {
 const fortuneMessages = [
   {
     title: "💘 Quẻ Được Yêu",
+    image: "./images/fortune_0.jpg",
     message: "Tháng 10 này, bạn sẽ được một người cực kỳ lãng mạn để ý! Hãy chuẩn bị tinh thần cho những lời tỏ tình siêu ngọt ngào."
   },
   {
     title: "🌟 Quẻ Được Thương",
+    image: "./images/fortune_1.jpg",
     message: "Một người đặc biệt sẽ 'fall in love' với bạn ngay từ cái nhìn đầu tiên. Tình yêu đẹp đang chờ đợi!"
   },
   {
     title: "💫 Quẻ Say Đắm",
+    image: "./images/fortune_2.jpg",
     message: "Bạn sẽ khiến ai đó hoàn toàn say đắm bởi sự duyên dáng và thông minh. Họ sẽ không ngừng khen bạn 'so beautiful' và 'so amazing'!"
   },
   {
     title: "🌸 Quẻ Theo Đuổi",
+    image: "./images/fortune_3.jpg",
     message: "Một người sẽ theo đuổi bạn nhiệt tình với những cử chỉ lãng mạn. Hãy sẵn sàng cho những bó hoa lớn và những lời khen ngợi!"
   },
   {
     title: "🎯 Quẻ Lãng Mạn",
+    image: "./images/fortune_4.jpg",
     message: "Bạn sắp trải nghiệm sự lãng mạn đích thực! Từ những buổi hẹn hò candlelit dinner đến những lời thì thầm ngọt ngào."
   },
   {
     title: "🌈 Quẻ Tán Tỉnh",
+    image: "./images/fortune_5.jpg",
     message: "Bạn sẽ nhận được sự tán tỉnh từ nhiều người khác nhau. Hãy chọn người khiến trái tim bạn rung động nhất!"
   },
   {
     title: "✨ Quẻ Yêu Thầm",
+    image: "./images/fortune_6.jpg",
     message: "Một người đang yêu thầm bạn từ xa. Họ sẽ tìm cách tiếp cận và bày tỏ tình cảm vào tháng 10 này."
   },
-  {
-    title: " Quẻ Paris",
-    message: "Tình yêu của bạn tháng này sẽ lãng mạn như Paris! Đầy ắp những khoảnh khắc ngọt ngào và bất ngờ."
-  },
-  {
-    title: " Quẻ Ý",
-    message: "Một tình yêu đam mê và nồng nhiệt kiểu Ý đang chờ bạn. Sự lãng mạn sẽ khiến bạn không thể quên."
-  },
-  {
-    title: "💃 Quẻ Nhiệt Huyết",
-    message: "Một tình yêu đầy đam mê và nhiệt huyết đang chờ bạn! Hãy để trái tim nhảy theo điệu nhạc tình yêu."
-  },
-  {
-    title: "🎭 Quẻ Bí Ẩn",
-    message: "Một người bí ẩn sẽ bị cuốn hút bởi bạn. Họ sẽ tìm mọi cách để làm quen và khiến bạn đặc biệt chú ý."
-  },
-  {
-    title: "🏰 Quẻ Cổ Tích",
-    message: "Tình yêu của bạn sẽ như một câu chuyện cổ tích! Người ấy sẽ khiến bạn tin vào 'happily ever after'."
-  },
-  {
-    title: "☕ Quẻ Café",
-    message: "Một cuộc gặp gỡ tình cờ tại quán café sẽ dẫn đến tình yêu đẹp. Họ sẽ mời bạn đi uống coffee mỗi ngày!"
-  },
-  {
-    title: "🎬 Quẻ Điện Ảnh",
-    message: "Tình yêu của bạn sẽ như một bộ phim lãng mạn. Đầy kịch tính, lãng mạn và kết thúc có hậu!"
-  },
-  {
-    title: "🌹 Quẻ Tặng Hoa",
-    message: "Bạn sẽ nhận được những bó hoa hồng lớn từ người si tình. Họ không ngại thể hiện tình cảm công khai và lãng mạn."
-  },
-  {
-    title: "🚲 Quẻ Xe Đạp",
-    message: "Một người đặc biệt sẽ mời bạn đi xe đạp dạo quanh thành phố - khởi đầu cho một tình yêu đẹp."
-  },
-  {
-    title: "🎵 Quẻ Âm Nhạc",
-    message: "Một người đa tài sẽ hát tặng bạn những bài tình ca và khiến trái tim tan chảy."
-  },
-  {
-    title: "🗽 Quẻ Tự Do",
-    message: "Một tình yêu tự do, phóng khoáng đang chờ bạn. Họ sẽ tôn trọng và yêu thương bạn theo cách đặc biệt nhất."
-  },
-  {
-    title: "🍷 Quẻ Rượu Vang",
-    message: "Một buổi tối với rượu vang và người lãng mạn sẽ thay đổi cuộc đời bạn. Tình yêu đẹp như rượu vang hảo hạng!"
-  },
-  {
-    title: "✈️ Quẻ Du Lịch",
-    message: "Bạn sẽ gặp người đặc biệt trong một chuyến du lịch và tình yêu sẽ nảy nở bất ngờ. Một câu chuyện tình đẹp như mơ!"
-  },
-  {
-    title: "🎓 Quẻ Trí Thức",
-    message: "Một người trí thức sẽ bị thu hút bởi sự thông minh của bạn. Họ sẽ tìm mọi cơ hội để trò chuyện và tán tỉnh."
-  },
-  {
-    title: "💌 Quẻ Thư Tình",
-    message: "Bạn sẽ nhận được những bức thư tình ngọt ngào. Họ không ngại thể hiện tình cảm qua từng con chữ dành cho bạn."
-  },
-  {
-    title: "🎁 Quẻ Bất Ngờ",
-    message: "Một tình yêu bất ngờ sẽ đến với bạn khi ít ngờ nhất. Hãy mở lòng đón nhận điều kỳ diệu!"
-  },
-  {
-    title: "💞 Quẻ Song Hành",
-    message: "Bạn sẽ tìm thấy người bạn đời tri kỷ - người hiểu và yêu thương bạn vô điều kiện."
-  }
+  // {
+  //   title: " Quẻ Paris",
+  //   message: "Tình yêu của bạn tháng này sẽ lãng mạn như Paris! Đầy ắp những khoảnh khắc ngọt ngào và bất ngờ."
+  // },
+  // {
+  //   title: " Quẻ Ý",
+  //   message: "Một tình yêu đam mê và nồng nhiệt kiểu Ý đang chờ bạn. Sự lãng mạn sẽ khiến bạn không thể quên."
+  // },
+  // {
+  //   title: "💃 Quẻ Nhiệt Huyết",
+  //   message: "Một tình yêu đầy đam mê và nhiệt huyết đang chờ bạn! Hãy để trái tim nhảy theo điệu nhạc tình yêu."
+  // },
+  // {
+  //   title: "🎭 Quẻ Bí Ẩn",
+  //   message: "Một người bí ẩn sẽ bị cuốn hút bởi bạn. Họ sẽ tìm mọi cách để làm quen và khiến bạn đặc biệt chú ý."
+  // },
+  // {
+  //   title: "🏰 Quẻ Cổ Tích",
+  //   message: "Tình yêu của bạn sẽ như một câu chuyện cổ tích! Người ấy sẽ khiến bạn tin vào 'happily ever after'."
+  // },
+  // {
+  //   title: "☕ Quẻ Café",
+  //   message: "Một cuộc gặp gỡ tình cờ tại quán café sẽ dẫn đến tình yêu đẹp. Họ sẽ mời bạn đi uống coffee mỗi ngày!"
+  // },
+  // {
+  //   title: "🎬 Quẻ Điện Ảnh",
+  //   message: "Tình yêu của bạn sẽ như một bộ phim lãng mạn. Đầy kịch tính, lãng mạn và kết thúc có hậu!"
+  // },
+  // {
+  //   title: "🌹 Quẻ Tặng Hoa",
+  //   message: "Bạn sẽ nhận được những bó hoa hồng lớn từ người si tình. Họ không ngại thể hiện tình cảm công khai và lãng mạn."
+  // },
+  // {
+  //   title: "🚲 Quẻ Xe Đạp",
+  //   message: "Một người đặc biệt sẽ mời bạn đi xe đạp dạo quanh thành phố - khởi đầu cho một tình yêu đẹp."
+  // },
+  // {
+  //   title: "🎵 Quẻ Âm Nhạc",
+  //   message: "Một người đa tài sẽ hát tặng bạn những bài tình ca và khiến trái tim tan chảy."
+  // },
+  // {
+  //   title: "🗽 Quẻ Tự Do",
+  //   message: "Một tình yêu tự do, phóng khoáng đang chờ bạn. Họ sẽ tôn trọng và yêu thương bạn theo cách đặc biệt nhất."
+  // },
+  // {
+  //   title: "🍷 Quẻ Rượu Vang",
+  //   message: "Một buổi tối với rượu vang và người lãng mạn sẽ thay đổi cuộc đời bạn. Tình yêu đẹp như rượu vang hảo hạng!"
+  // },
+  // {
+  //   title: "✈️ Quẻ Du Lịch",
+  //   message: "Bạn sẽ gặp người đặc biệt trong một chuyến du lịch và tình yêu sẽ nảy nở bất ngờ. Một câu chuyện tình đẹp như mơ!"
+  // },
+  // {
+  //   title: "🎓 Quẻ Trí Thức",
+  //   message: "Một người trí thức sẽ bị thu hút bởi sự thông minh của bạn. Họ sẽ tìm mọi cơ hội để trò chuyện và tán tỉnh."
+  // },
+  // {
+  //   title: "💌 Quẻ Thư Tình",
+  //   message: "Bạn sẽ nhận được những bức thư tình ngọt ngào. Họ không ngại thể hiện tình cảm qua từng con chữ dành cho bạn."
+  // },
+  // {
+  //   title: "🎁 Quẻ Bất Ngờ",
+  //   message: "Một tình yêu bất ngờ sẽ đến với bạn khi ít ngờ nhất. Hãy mở lòng đón nhận điều kỳ diệu!"
+  // },
+  // {
+  //   title: "💞 Quẻ Song Hành",
+  //   message: "Bạn sẽ tìm thấy người bạn đời tri kỷ - người hiểu và yêu thương bạn vô điều kiện."
+  // }
 ];
 
 // Khởi tạo modal quẻ bói
@@ -401,6 +408,8 @@ document.addEventListener("DOMContentLoaded", function () {
       fortuneResult.innerHTML = `
                 <h3>${selectedFortune.title}</h3>
                 <p>${selectedFortune.message}</p>
+                <img src="${selectedFortune.image}"   alt="Fortune Image" />
+                
             `;
 
       // Thêm hiệu ứng confetti
