@@ -12,13 +12,26 @@
         .font-dancing {
             font-family: 'Dancing Script', cursive;
         }
+
+        .spin {
+            transition: transform 4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        }
     </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
-<body class="bg-pink-50 min-h-screen flex flex-col items-center justify-center px-6 py-10">
+<body class="bg-#906e73-50 min-h-screen flex flex-col items-center justify-center px-6 py-10">
 
+    <div class=" w-full flex">
+        <lottie-player src="./json/Christmas wind chimes.json" background="transparent" speed="1" loop autoplay
+            class="scale-x-[-1]">
+        </lottie-player>
+        <lottie-player src="    ./json/Christmas wind chimes.json" background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
     <!-- Header -->
-    <header class="text-center text-white bg-rose-400 py-5 px-10 rounded-2xl shadow-lg mb-10">
+    <header
+        class="text-center text-white bg-rose-400 py-5 px-10 rounded-2xl shadow-lg mb-10 transform hover:scale-110 transition-transform duration-300">
         <h1 class="text-4xl font-dancing">Tháng Mười Một Ấm Áp</h1>
     </header>
 
@@ -33,6 +46,33 @@
         </section>
     </main>
 
+    <div class="relative w-64 h-64 mt-10 mb-10">
+        <!-- Vòng xoay -->
+        <div id="wheel" class="absolute w-full h-full rounded-full border-8 border-yellow-400 spin" style="background: conic-gradient(
+               #f87171 0deg 60deg,
+               #facc15 60deg 120deg,
+               #4ade80 120deg 180deg,
+               #60a5fa 180deg 240deg,
+               #a78bfa 240deg 300deg,
+               #fb923c 300deg 360deg
+             );">
+        </div>
+
+        <!-- Nút quay -->
+        <button id="spinButton"
+            class="absolute inset-0 m-auto w-20 h-20 bg-white text-blue-700 font-bold rounded-full shadow-lg hover:scale-110 transition-transform"
+            onclick="spinWheel()">
+            Quay
+        </button>
+
+        <!-- Mũi tên -->
+        <div class="absolute top-[-20px] left-1/2 -translate-x-1/2 w-0 h-0 
+                    border-l-[12px] border-l-transparent 
+                    border-r-[12px] border-r-transparent 
+                    border-b-[20px] border-b-red-600"></div>
+    </div>
+    <p id="result" class="mt-6 text-xl font-semibold text-black"> ddd</p>
+    <script src="script.js"></script>
 </body>
 
 </html>
